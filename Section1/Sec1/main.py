@@ -19,5 +19,25 @@
 
 # print("Hello " + input("What is your name")) 
 
-#Section 10
-print( len(input("What is your name? ")))
+# #Section 10
+# print( len(input("What is your name? ")))
+
+# #Section 11 
+# name = input("What is your name?")
+# length = len(name)
+# print(length)
+
+#section 12
+a = input("a: ")
+b = input("b: ")
+
+secondA = a
+secondB = b
+
+a = secondB
+b = secondA
+
+print("a = " + a)
+print("b = " + b)
+
+#Section 13
