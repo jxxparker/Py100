@@ -28,16 +28,24 @@
 # print(length)
 
 #section 12
-a = input("a: ")
-b = input("b: ")
+# a = input("a: ")
+# b = input("b: ")
 
-secondA = a
-secondB = b
+# secondA = a
+# secondB = b
 
-a = secondB
-b = secondA
+# a = secondB
+# b = secondA
 
-print("a = " + a)
-print("b = " + b)
+# print("a = " + a)
+# print("b = " + b)
 
 #Section 13
+# name = "Jack"
+# print(name)
+
+# name = "Ji"
+# print(name)
+# name = input("namep plz?")
+# length = len(name)
+# print(length)
