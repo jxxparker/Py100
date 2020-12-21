@@ -25,4 +25,4 @@ programming_dictionary = {
 #loop through a dictionary
 for thing in programming_dictionary:
     print(thing)
-    print(programming_dictionary[thing])
+    # print(programming_dictionary[thing])
