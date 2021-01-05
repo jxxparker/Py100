@@ -26,6 +26,14 @@ operation_symbol = input("pick an operation from the line above: ") #choosing wh
 num2 = int(input("what is the second number")) #choosing 2nd number
 
 calculation_function = operations[operation_symbol] #getting what user put in for operation and executing 
-answer = calculation_function(num1,num2) #using operation executed with two numbers used 
+first_answer = calculation_function(num1,num2) #using operation executed with two numbers used 
 
-print(f"{num1} {operation_symbol} {num2} = {answer}") #printing
+print(f"{num1} {operation_symbol} {num2} = {first_answer}") #printing
+
+operation_symbol = input("pick another operation ") #choosing which operation
+num3 = int(input("whats 3rd number"))
+calculation_function = operations[operation_symbol]
+second_answer = calculation_function(first_answer,num3)
+
+print(f"{first_answer} {operation_symbol} {num3} = {second_answer}")
+
