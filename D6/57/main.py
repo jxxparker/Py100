@@ -1,9 +1,10 @@
-print("Hello")
-num_char = len("Hello")
-print(num_char)
+# print("Hello")
+# num_char = len("Hello")
+# print(num_char)
 
-def my_function():
-    print("Hello")
-    print("Bye")
+# def my_function():
+#     print("Hello")
+#     print("Bye")
 
-my_function()
+# my_function()
+
