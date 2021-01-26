@@ -16,3 +16,4 @@ computer_cards = []
 
 for _ in range(2):
   deal_card()
+#starting
