@@ -6,10 +6,7 @@ def deal_card():
   card = random.choice(cards)
   return card
 
-
 def calculate_score(cards):
-  """Take a list of cards and return the score calculated from the cards"""
-
 
   if sum(cards) == 21 and len(cards) == 2:
     return 0
@@ -75,5 +72,4 @@ def play_game():
   print(compare(user_score, computer_score))
 
 while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y":
-
-  play_game()
+    play_game()
