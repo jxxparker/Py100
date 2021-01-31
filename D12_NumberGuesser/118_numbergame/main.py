@@ -2,12 +2,16 @@ from random import randint
 
 EASY_LEVEL_TURNS = 10
 HARD_LEVEL_TURNS = 5
+
 #fxn to check user's guess against actual answer
-def check_answer(guess, answer):
+def check_answer(guess, answer, turns):
+    """check answer against guess. returns the  number of turns remaining"""
     if guess > answer:
         print("too high")
+        return turns - 1
     elif guess < answer:
         print("too low")
+        return turns - 1
     else:
         print(f"you got it. the answer was {answer}")
         
@@ -30,15 +34,20 @@ def game():
     print(f"psst the correct anser is {answer}")
 
     turns = set_difficulty()
-    print(f"you have {turns} attempts remaining to guess the number ")
-
-
+    
     #repeat the guessing fxn if they get it wrong]
     guess = 0
     while guess != answer:
     #let the user guess a number
+        print(f"you have {turns} attempts remaining to guess the number ")
         guess = int(input("Make a guess: "))
-        check_answer(guess, answer)
+        turns = check_answer(guess, answer, turns)
+
+        if turns == 0:
+            print("you've run out of guesses, you lose")
+            return
+        elif guess != answer:
+            print("guess again")
 
 #track the number of turns and reduce by 1 if they get it wrong.
 game()
