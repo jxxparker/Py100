@@ -24,16 +24,25 @@ MENU = {
     }
 }
 
+profit = 0
 resources = {
     "water": 300,
     "milk": 200,
     "coffee": 100,
 }
 
-
+#Turn off the Coffee Machine by entering “off” to the prompt.
 is_on = True
 
 while is_on:
     choice = input("what would you like ? (espresso/latte/cappucino): ")
-    if choice == "off":
-        is_on = False
+    if choice == "off":        is_on = False
+    elif choice == "report":
+        print(f"Water : {resources['water']}ml")
+        print(f"Milk: {resources['milk']}ml")
+        print(f"Coffee: {resources['coffee']}g")
+        print(f"Money: ${profit}")
+
+
+#Print report
+
