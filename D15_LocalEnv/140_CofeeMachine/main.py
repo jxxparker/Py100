@@ -31,6 +31,9 @@ resources = {
     "coffee": 100,
 }
 
+def is_resource_sufficient(order_ingredients):
+
+
 #Turn off the Coffee Machine by entering “off” to the prompt.
 is_on = True
 
@@ -45,7 +48,7 @@ while is_on:
         print(f"Money: ${profit}")
     else:
         drink = MENU[choice]
-        print(drink)
+        is_resource_sufficient(drink["ingredients"])
 
 
 #Print report
