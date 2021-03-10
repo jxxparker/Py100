@@ -12,9 +12,9 @@ elif bmi_an_int > 18.5 and bmi_an_int < 25:
 elif bmi_an_int > 25 and bmi_an_int < 30:
     print(str(bmi_an_int) + " slight overweight")
 elif bmi_an_int > 30 and bmi_an_int < 35:
-    print(str(bmi_an_int) + " obese")
+    print(str(bmi_an_int) + " obese ")
 else:
-    print(str(bmi_an_int) + " clnically obese")
+    print(str(bmi_an_int) + " clnically obese ")
 
 
 
