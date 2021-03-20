@@ -1,12 +1,14 @@
 import random
 
-names_of_everybody = input("Give me everybodys names")
-names = names_of_everybody.split(", ")
-print(names)
+# Split string method
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ") #split puts all the names splitted
 
 num_items = len(names)
-print(num_items)
-random_choice = random.randint(0,  num_items - 1) #between 0 and 3
-person_paying = names[random_choice]
+# print(num_items)
 
-print(person_paying + " is going to pay. thanks!")
+random_choice = random.randint(0, num_items - 1)
+# print(random_choice)
+
+person_who_will_pay = names[random_choice]
+print(person_who_will_pay + " is going to pay the meal today")
