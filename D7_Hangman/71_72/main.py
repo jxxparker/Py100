@@ -1,7 +1,6 @@
 #Step 3
-
 import random
-word_list = ["aardvark", "baboon", "camel"]
+word_list = ["tacos", "burgers", "pizza"]
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
 
