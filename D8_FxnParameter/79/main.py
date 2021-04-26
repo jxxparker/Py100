@@ -1,11 +1,20 @@
+#functions
+#create a fxn called greet().
+#write 3 print statements inside the function
+#call the greet() function and run your code.
+
 def greet():
-    print("Hello")
-    print("Howdo you do")
-    print("Isn't the weather nice today")
-#greet()
+    print("hello")
+    print("HI")
+    print("jihun")
 
-def greet_with_name(name):
+greet()
+
+#fxn with inputs
+
+def my_function(name):
     print(f"hello {name}")
-    print(f"how doyou do {name}")
+    print(f"HI {name}")
+    print(f"jihun {name}")
 
-greet_with_name("jihun")
+my_function("james")
