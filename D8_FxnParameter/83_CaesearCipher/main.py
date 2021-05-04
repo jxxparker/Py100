@@ -8,7 +8,7 @@ def encrypt(plain_text, shift_amount):
     cipher_text = ""
     for letter in plain_text:
         position = alphabet.index(letter) #where alphabet is located
-        print("hi" + str(position))
+        # print("hi " + str(position)) #test print to print the position of new position
         new_position = position + shift_amount
         new_letter = alphabet[new_position]
         cipher_text += new_letter
